@@ -11,7 +11,7 @@ def  promedio(hash)
     suma = 0
     hash.each { |key,value|   suma +=  value}
     suma / hash.count.to_i
-    end
     
-
-puts promedio(new_hash)
+end
+    
+    puts promedio(new_hash)
