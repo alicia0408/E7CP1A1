@@ -6,4 +6,12 @@
 personas = ["Carolina", "Alejandro", "Maria Jesús", "Valentín"]
 edades = [32, 28, 41, 19]
 new_hash = [personas,edades].transpose.to_h
-puts new_hash
+
+def  promedio(hash)
+    suma = 0
+    hash.each { |key,value|   suma +=  value}
+    suma / hash.count.to_i
+    end
+    
+
+puts promedio(new_hash)
